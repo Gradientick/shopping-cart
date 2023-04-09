@@ -1,36 +1,190 @@
 const products = [
     {
-        image: "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/8/184956_2022.jpg",
-        title: "Iphone 14 Pro Max",
-        price: 74000,
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
     },
     {
-        image: "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/8/184956_2022.jpg",
-        title: "Iphone 14 Pro Max",
-        price: 74000,
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
     },
     {
-        image: "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/8/184956_2022.jpg",
-        title: "Iphone 14 Pro Max",
-        price: 74000,
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
     },
     {
-        image: "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/8/184956_2022.jpg",
-        title: "Iphone 14 Pro Max",
-        price: 74000,
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
     },
     {
-        image: "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/8/184956_2022.jpg",
-        title: "Iphone 14 Pro Max",
-        price: 74000,
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
     },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    {
+        image: "https://picsum.photos/140",
+        title: "Product",
+        price: 123,
+    },
+    
+    
+    
 ];
 
 products.forEach(function(product) {
     const card = document.createElement('div')
+    card.classList.add('item');
+   
+    const image = document.createElement('img')
+    image.src = product.image
 
-    const productImage = document.createElement("div")
-    productImage.textContent = product.image
+    const title = document.createElement('h5')
+    title.textContent = product.title
 
-    card.appendChild(productImage);
+    const price = document.createElement('p')
+    price.textContent = product.price
+
+
+    document.getElementById("product-list").appendChild(card);
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(price);
+
+
+    
+
+    
 })
